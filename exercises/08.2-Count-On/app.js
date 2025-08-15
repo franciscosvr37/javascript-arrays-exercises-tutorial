@@ -4,6 +4,10 @@ let hello = [];
 for(let i = 0; i < myArray.length; i++) {
     let item = myArray[i];
     // MAGIC HAPPENS HERE
+    let typeData=myArray[i]
+    if(typeof(typeData)==="object"){
+        hello.push(typeData)
+    }
 }
 
 console.log(hello)
